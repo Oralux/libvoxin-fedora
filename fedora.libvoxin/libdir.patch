@@ -1,0 +1,28 @@
+diff -urN a/build.sh b/build.sh
+--- a/build.sh	2017-04-17 12:33:15.000000000 +0200
++++ b/build.sh	2017-04-29 17:16:26.616486261 +0200
+@@ -49,8 +49,8 @@
+ fi
+ 
+ BASE=$PWD
+-LIB32=$RFS/usr/lib/i386-linux-gnu
+-LIB64=$RFS/usr/lib/x86_64-linux-gnu
++LIB32=$RFS/usr/lib
++LIB64=$RFS/usr/lib64
+ BINDIR=$RFS/usr/bin
+ 
+ rm -rf $RFS
+diff -urN a/clean.sh b/clean.sh
+--- a/clean.sh	2017-04-17 12:33:15.000000000 +0200
++++ b/clean.sh	2017-04-29 17:52:28.243290657 +0200
+@@ -5,8 +5,8 @@
+ fi
+ 
+ BASE=$PWD
+-LIB32=$RFS/usr/lib/i386-linux-gnu
+-LIB64=$RFS/usr/lib/x86_64-linux-gnu
++LIB32=$RFS/usr/lib
++LIB64=$RFS/usr/lib64
+ BINDIR=$RFS/usr/bin
+ 
+ rm -rf $PWD/build
